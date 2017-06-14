@@ -24,6 +24,9 @@
     const email = txtEmail.value;
     const password = txtPassword.value;
     const auth = firebase.auth();
+    // reset input fields
+    txtEmail.value = "";
+    txtPassword.value = "";
 
     // log in
     const promise = auth.signInWithEmailAndPassword(email, password);
@@ -37,6 +40,9 @@
     const email = txtEmail.value;
     const password = txtPassword.value;
     const auth = firebase.auth();
+    // reset input fields
+    txtEmail.value = "";
+    txtPassword.value = "";
 
     // log in
     const promise = auth.createUserWithEmailAndPassword(email, password);
@@ -55,13 +61,13 @@
       console.log(firebaseUser);
       // show logout button and update greeting
       btnLogOut.classList.remove('hide');
-      document.getElementById('greeting').innerText = `Welcome ${firebaseUser.email}`;
+      document.getElementById('greeting').innerText = `welcome ${firebaseUser.email}`;
       // else user is null
     } else {
       console.log("Not logged in...");
       // hide logout button and update greeting
       btnLogOut.classList.add('hide');
-      document.getElementById('greeting').innerText = `no user logged in`;
+      document.getElementById('greeting').innerText = `nobody is logged in`;
     }
   });
 

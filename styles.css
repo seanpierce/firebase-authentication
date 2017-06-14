@@ -1,0 +1,41 @@
+/*peach #fffbe2*/
+
+body {
+  background-color: #fffbe2;
+  transition: all 0.25s;
+}
+.login-wrapper {
+  width: 100%;
+  display: block;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+.items {
+  display: block;
+  margin: auto;
+  width: 90%;
+  max-width: 400px;
+}
+#greeting {
+  margin-bottom: 2em;
+}
+input {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: solid 1px #333;
+  margin: 0.5em 0;
+  padding: 0.25em;
+}
+input:focus {
+  outline-width: 0;
+}
+input, button {
+  background-color: rgba(0, 0, 0, 0);
+}
+button {
+  border: solid 1px #333;
+}

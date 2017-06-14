@@ -2,7 +2,19 @@
 
 This repo was created as an independent exercise to better understand how <a href="https://firebase.google.com">Firebase</a> manages user authentication.
 
-#### Usage
+### Views
+
+**Nobody is logged in**  
+![](img/nobody.png)
+
+**Enter your info**  
+![](img/enter-info.png)
+
+**Welcome!**  
+![](img/welcome.png)
+
+
+### Usage
 _note: for testing, a firebase account is necessary_
 * Sign into your Firebase console
 * Create a new database with <a href="https://firebase.google.com/docs/database/security/quickstart">read, write rules set to "true"</a>
@@ -20,8 +32,9 @@ _note: for testing, a firebase account is necessary_
   };
   ```
 * replace "Your API info" with your new database information _(located in Database > Overview > Add Firebase to your web app)_
+* Sign Up, Sign In, Sign Out!
 
-#### Author, contact
+### Author, contact
 Sean Pierce, sumler.sean@gmail.com
 
 #### License
